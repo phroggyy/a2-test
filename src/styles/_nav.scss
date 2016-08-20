@@ -1,0 +1,43 @@
+nav {
+    z-index: 10;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    padding: .3rem 1rem;
+
+    &.floating {
+        position: fixed;
+        top: 0;
+    }
+
+    // If we have a solid nav bar, make it white
+    background-color: transparent;
+    .solid {
+        background-color: #fff;
+        -webkit-transition: background-color .3s;
+        -moz-transition: background-color .3s;
+        -ms-transition: background-color .3s;
+        -o-transition: background-color .3s;
+        transition: background-color .3s;
+    }
+
+    a.brand {
+        font-size: 1.2rem;
+        color: #000;
+        align-self: center;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        justify-content: flex-end;
+        display: flex;
+        li {
+            padding: 0 1rem;
+        }
+    }
+}

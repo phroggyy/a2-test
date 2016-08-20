@@ -1,0 +1,31 @@
+@import "variables";
+
+.ng-valid[required] {
+    border-left: 5px solid $green; /* green */
+}
+
+.ng-invalid.ng-dirty {
+    border-left: 5px solid $red; /* red */
+
+    // Since an error message is being showed,
+    // we add some styles to make that look nicer
+    &.has-error-message {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 0;
+    }
+}
+
+.input-warning {
+    background-color: $red;
+    margin-top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: .5rem 7px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+input {
+    min-width: 20rem;
+}

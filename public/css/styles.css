@@ -1,4 +1,12 @@
 body {
-    background: #0147A7;
-    color: #fff;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+main.offset-nav {
+    margin-top: 60px;
 }

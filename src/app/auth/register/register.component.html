@@ -1,0 +1,23 @@
+<main class="container">
+    <div class="login-window">
+        <h1 class="text-center">Register</h1>
+        <form (submit)="register()">
+            <fieldset>
+                <label for="email">Email address</label>
+                <input required
+                       type="email"
+                       class="has-error-message"
+                       name="email"
+                       [(ngModel)]="user.email"
+                       #email="ngModel">
+                <div [hidden]="email.valid || email.pristine"
+                     class="input-warning">
+                    Email is required
+                </div>
+                <label for="password">Password</label>
+                <input required type="password" name="password" [(ngModel)]="user.password">
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </div>
+</main>

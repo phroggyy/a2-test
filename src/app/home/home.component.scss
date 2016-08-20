@@ -1,0 +1,47 @@
+main {
+    .splash {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../../public/images/winter.jpeg');
+        -webkit-background-size: cover;
+        background-size: cover;
+
+        .lead {
+            text-transform: uppercase;
+            font-size: .8rem;
+        }
+
+        .tagline {
+            font-size: 3rem;
+            margin-top: 0;
+        }
+    }
+
+    section.marketing {
+        max-width: 960px;
+        margin: 0 auto;
+        margin-top: 5rem;
+        h2, h3, h4, h5 {
+            font-weight: 300;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            article {
+                flex: 1;
+                &:last-of-type {
+                    flex: 2;
+                }
+                &.img-right {
+                    &:first-of-type {
+                        flex: 2;
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+        }
+    }
+}
