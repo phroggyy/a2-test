@@ -1,0 +1,14 @@
+<dashboard>
+    <main class="offset-nav">
+        <div class="container">
+            <h1 class="text-center">Your Backups</h1>
+            <p class="text-center">
+                {{ displayCreateForm }}
+                <a href="" *ngIf="displayCreateForm" (click)="displayCreateForm = true">Create a new one</a>
+            </p>
+            <div class="row center-children" *ngIf="displayCreateForm">
+                <create-backup-form></create-backup-form>
+            </div>
+        </div>
+    </main>
+</dashboard>

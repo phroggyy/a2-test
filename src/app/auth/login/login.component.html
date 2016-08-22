@@ -1,8 +1,8 @@
 <main class="container">
     <div class="login-window">
         <div class="warning" [hidden]="! errorMessage">Something went wrong, please try again</div>
-        <h1 class="text-center">Register</h1>
-        <form (submit)="register()">
+        <h1 class="text-center">Login</h1>
+        <form (submit)="login()">
             <fieldset>
                 <label for="email">Email address</label>
                 <input required
@@ -17,7 +17,7 @@
                 </div>
                 <label for="password">Password</label>
                 <input required type="password" name="password" [(ngModel)]="user.password">
-                <button type="submit">Register</button>
+                <button type="submit">Login</button>
             </fieldset>
         </form>
     </div>

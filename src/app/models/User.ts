@@ -1,7 +1,7 @@
 export class User {
     constructor(
         public email:string,
-        protected password:string
+        public password:string = ''
     ) {
 
     }
